@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Make website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Title -->
+    <title>Tic Tac Toe Game</title>
+    
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Winner Message Container -->
+    <!-- This section will appear when a player wins -->
+    <!-- By default it has the "hide" class so it stays invisible -->
+    <div class="msg-container hide">
+        <!-- Message that will display the winner -->
+        <p id="msg">Winner</p>
+        
+        <!-- Button to start a new game after someone wins -->
+        <button id="new-game">New Game</button>
+    </div>
+
+    <!-- Main Game Area -->
+    <main>
+        <h1>Tic Tac Toe Game</h1>
+        
+        <!-- Outer container to center the game -->
+        <div class="container">
+            <!-- Game board: 9 buttons for 9 cells -->
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        
+        <!-- Reset button to restart the game anytime -->
+        <button class="reset">Reset</button>
+    </main>
+
+    <!-- Linking external JavaScript file -->
+    <script src="new.js"></script>
+</body>
+</html>

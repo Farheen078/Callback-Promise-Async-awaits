@@ -1,0 +1,73 @@
+/* Reset margin, padding and set box-sizing to border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: aqua; /* Light blue background */
+  text-align: center; /* Center align all text */
+  font-family: Arial, sans-serif; /* Use clean font */
+}
+
+/* Container that holds the game board */
+.container {
+  height: 70vh; /* Take 70% of the viewport height */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* The game board (grid of boxes) */
+.game {
+  height: 60vmin; /* Square size responsive to screen */
+  width: 60vmin;
+  display: flex; /* Flexbox for wrapping */
+  flex-wrap: wrap; /* Allow boxes to move to next line */
+  justify-content: center; /* Center boxes horizontally */
+  align-items: center; /* Center boxes vertically */
+  gap: 1.5vmin; /* Space between boxes */
+}
+
+/* Each cell/box of the game */
+.box {
+  height: 18vmin; /* Responsive height */
+  width: 18vmin; /* Responsive width */
+  border-radius: 1rem; /* Rounded corners */
+  border: none; /* Remove default border */
+  box-shadow: 0 0 1rem red; /* Glow effect */
+  font-size: 8vmin; /* Large text for O and X */
+  color: red; /* Text color */
+  background-color: white; /* White background for box */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+/* Reset button style */
+.reset {
+  padding: 1rem; /* Padding inside button */
+  font-size: 1.5rem; /* Larger text size */
+  background-color: rgb(32, 152, 152); /* Teal background */
+  color: white; /* White text */
+  border-radius: 1rem; /* Rounded corners */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Winner message style */
+#msg {
+  color: aliceblue; /* Light text color */
+  font-size: 8vmin; /* Large text size */
+}
+
+/* Hide element completely */
+.hide {
+  display: none;
+}
+
+/* Winner message background styling */
+.msg-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 2rem; /* Space inside */
+}
